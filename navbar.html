@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+            
+        }
+        #navbar{
+            width: 100%;
+            height: 50px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            margin: auto;
+            justify-content: space-between;
+            background-color: #1B2937;
+            border-radius: 10px;
+        }
+        #navbar>div{
+            width: 90%;
+            height: 75%;
+            display: flex;
+            margin: auto;
+            justify-content: space-between;
+        }
+        .mainpg{
+            background-color: transparent;
+            color: white;
+            border: transparent;
+            font-size: large;
+            
+        }
+        .mainpg>a{
+            text-decoration-line: none;
+            color: white;
+            font-size: large;
+        }
+        .mainpg:hover{
+            background-color: #1f4a75;
+        }
+        /* ********************************************** */
+        .bg-modal{
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            top: 0;
+            display: flex;
+            justify-content: end;
+            display: none;
+        }
+            #lbox{
+                width: 25%;
+                background-color: white;
+            }
+            #lhead{
+                background-color: black;
+                width: 100%;
+                color: white;
+                display: flex;
+                align-items: center;
+                height: 80px;
+            }
+            #lhead>.close-{
+            display: inline-block;
+            background-color: transparent;
+            width: 12%;
+            color: white;
+            font-size: 19px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            padding: 8px 25px;
+            position: relative;
+            }
+            .close-.closex::after{
+            position: absolute;
+            right: 3%;
+            bottom: 8%;
+            content: "-";
+            color: white;
+            font-size: 35px;
+            }
+            .close-.closex:hover:after{
+            position: absolute;
+            right: 3%;
+            bottom: 1%;
+            content: "+";
+            color: white;
+            font-size: 34px;
+            font-weight: bolder;
+            transform: rotate(45deg);
+            }
+           
+            #lhead>h1{
+                font-size: 35px;
+                padding: 9%;
+            }
+            form{
+                margin-top: 40px;
+            }
+            input,label,a,button{
+                width: 90%;
+                display: block;
+                margin: 5px auto;
+                text-decoration-line: none;
+            }
+            input{
+               height: 35px;
+            }
+            
+            #lfacbook>a{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #3B5998;
+                color: white;
+                width: 100%;
+                height: 40px;
+                font-size: 13px;
+                padding-left: 1%;
+                margin-top: 40px;
+            }
+            #lfacbook>a>img{
+                height: 40px;
+            }
+            #lfacbook:hover{
+                opacity: 0.5;
+                cursor: pointer;
+            }
+            #lgoogle>a{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: rgb(226, 66, 38);
+                color: white;
+                width: 100%;
+                height: 40px;
+                font-size: 13px;
+                padding-left: 1%;
+                margin-top: 10px;
+            }
+            #lgoogle>a>img{
+                height: 40px;
+            }
+            #lgoogle:hover{
+                opacity: 0.5;
+                cursor: pointer;
+            }
+            #signup{
+                text-align: center;
+                padding: 3%;
+                display: block;
+                margin: auto;
+                margin-top: 35px;
+            }
+            #signup>img{
+                height: 60px;
+            }
+            .login{
+                
+                width: 93%;
+                border:2px solid black;
+                background-color: white;
+                height: 35px;
+            }
+            .login:hover{
+                cursor: pointer;
+                color: white;
+                background-color: rgb(49, 46, 46)
+            }
+            .signup{
+                color: black;
+                background-color: white;
+                width: 70%;
+                border:2px solid black;
+                height: 35px;
+                cursor: pointer;
+            }
+            /* *********************************** */
+            .bg-modalsignup{
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0);
+            position: absolute;
+            top: 0;
+            display: flex;
+            justify-content: end;
+            display: none;
+        }
+            #sbox{
+                width: 25%;
+                background-color: white;
+            }
+            #shead{
+                background-color: black;
+                width: 100%;
+                color: white;
+                display: flex;
+                align-items: center;
+                height: 80px;
+            }
+            #shead>.close-{
+            display: inline-block;
+            background-color: transparent;
+            width: 12%;
+            color: white;
+            font-size: 19px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            padding: 8px 25px;
+            position: relative;
+            }
+            .close-.closex::after{
+            position: absolute;
+            right: 3%;
+            bottom: 8%;
+            content: "-";
+            color: white;
+            font-size: 35px;
+            }
+            .close-.closex:hover:after{
+            position: absolute;
+            right: 3%;
+            bottom: 1%;
+            content: "+";
+            color: white;
+            font-size: 34px;
+            font-weight: bolder;
+            transform: rotate(45deg);
+            }
+           
+            #shead>h1{
+                font-size: 35px;
+                padding: 9%;
+            }
+            /* *********** */
+            form{
+                margin-top: 40px;
+            }
+            input,label,a,button{
+                width: 90%;
+                display: block;
+                margin: 5px auto;
+                text-decoration-line: none;
+            }
+            input{
+               height: 35px;
+            }
+            
+            #sfacbook>a{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #3B5998;
+                color: white;
+                width: 100%;
+                height: 40px;
+                font-size: 13px;
+                padding-left: 1%;
+                margin-top: 10px;
+            }
+            #sfacbook>a>img{
+                height: 40px;
+            }
+            #sfacbook:hover{
+                opacity: 0.5;
+                cursor: pointer;
+            }
+            #sgoogle>a{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: rgb(226, 66, 38);
+                color: white;
+                width: 100%;
+                height: 40px;
+                font-size: 13px;
+                padding-left: 1%;
+                margin-top: 10px;
+            }
+            #sgoogle>a>img{
+                height: 40px;
+            }
+            #sgoogle:hover{
+                opacity: 0.5;
+                cursor: pointer;
+            }
+            #login{
+                text-align: center;
+                padding: 3%;
+                display: block;
+                margin: auto;
+                margin-top: 35px;
+            }
+            #login>img{
+                height: 60px;
+            }
+            .register{
+                margin-top:30px;
+                width: 93%;
+                border:2px solid black;
+                background-color: white;
+                height: 35px;
+            }
+            .register:hover{
+                cursor: pointer;
+                color: white;
+                background-color: rgb(49, 46, 46)
+            }
+            .slogin{
+                color: black;
+                background-color: white;
+                width: 70%;
+                border:2px solid black;
+                height: 35px;
+                cursor: pointer;
+            }
+
+        </style>
+</head>
+<body>
+    <div id="mainpage">
+        <div id="navbar">
+            <div id="home">
+                <button class="mainpg">Reebok</button>
+            </div>
+            <div>
+                <button class="mainpg"><a href="" id="man">Men</a></button>
+                <button class="mainpg"><a href="" id="women">Women</a></button>
+                <button class="mainpg" id="mainlogin">Login</button>
+            </div>
+        </div>
+    </div>
+   
+    <!-- ******************************************** -->
+    <!-- login page -->
+    <div class="bg-modal">
+        <div id="lbox">
+            <div id="lhead">
+                <!-- <div>heading here</div> -->
+                <h1>SIGN IN</h1>
+                <a href="#" class="close- closex" id="close">CLOSE</a>
+            </div>
+            <form>
+                <!-- login inputs here -->
+                <Label>Email address</Label>
+                <input type="email" id="lmail" required>
+                <Label>password</Label>
+                <input type="password" id="lpassword" required>
+                <a href="#">Forgot your password?</a>
+                <button class="login">LOGIN</button>
+            </form>
+            <div>
+                <div id="lfacbook" >
+                    <a href="https://www.facebook.com/">
+                        <h2>Sign in with Facebook</h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0iOewmwpKr8D0RZYHZ_fKVxjO7G287chknQ&usqp=CAU" alt="">
+                    </a>
+                </div>
+                <div id="lgoogle">
+                    <a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+                        <h2>Sign in with Google</h2>
+                        <img src="data:image/jpeg;base64,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" alt="">
+                    </a>
+                </div>
+                <!-- google/facebook login here -->
+            </div>
+            <div id="signup">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgKsrIs3wrh-AhPhoDmOPMajm6YvE4z9x_Rg&usqp=CAU" alt="">
+                <h2>No account yet?</h2>
+                <p>Welcome to Kimaye! Help us with a few details to know you better as you take the journey of enjoying our safe and tasty fruits.</p>
+                <button class="signup" id="lsignup">Create An Account</button>
+                <!-- create account option here -->
+            </div>
+        </div>
+    </div>
+    <!-- ******************************************** -->
+    <!-- signup page -->
+    <div class="bg-modalsignup">
+        <div id="sbox">
+            <div id="shead">
+                <!-- <div>heading here</div> -->
+                <h1>SIGN IN</h1>
+                <a href="#" class="close- closex" id="sclose">CLOSE</a>
+            </div>
+            <div>
+                <div id="sfacbook" >
+                    <a href="https://www.facebook.com/">
+                        <h2>Sign in with Facebook</h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0iOewmwpKr8D0RZYHZ_fKVxjO7G287chknQ&usqp=CAU" alt="">
+                    </a>
+                </div>
+                <div id="sgoogle">
+                    <a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+                        <h2>Sign in with Google</h2>
+                        <img src="data:image/jpeg;base64,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" alt="">
+                    </a>
+                </div>
+                <!-- google/facebook login here -->
+            </div>
+            <form>
+                <!-- login inputs here -->
+                <Label>First Name</Label>
+                <input type="text" id="fname" required>
+                <Label>Last Name</Label>
+                <input type="text" id="lname" required>
+                <Label>Email address</Label>
+                <input type="email" id="smail" required>
+                <Label>password</Label>
+                <input type="password" id="spassword" required>
+                <button class="register">REGISTER</button>
+            </form>
+            <div>
+
+            <div id="login">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgKsrIs3wrh-AhPhoDmOPMajm6YvE4z9x_Rg&usqp=CAU" alt="">
+                <h2>No account yet?</h2>
+                <p>Welcome to Kimaye! Help us with a few details to know you better as you take the journey of enjoying our safe and tasty fruits.</p>
+                <button class="slogin">Login</button>
+                
+                <!-- create account option here -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    //to open popup
+    document.querySelector("#mainlogin").addEventListener("click",function(){
+        document.querySelector(".bg-modal").style.display="flex";
+    })
+    //to close popup
+    document.querySelector("#close").addEventListener("click",function(){
+        document.querySelector(".bg-modal").style.display="none";
+    })
+    //to go to signup
+    document.querySelector("#lsignup").addEventListener("click",function(){
+        document.querySelector(".bg-modalsignup").style.display="flex";
+    })
+    //to close from signup pagr
+    document.querySelector("#sclose").addEventListener("click",function(){
+        document.querySelector(".bg-modalsignup").style.display="none";
+        document.querySelector(".bg-modal").style.display="none";
+    })
+    //to go to login page from signup 
+    document.querySelector(".slogin").addEventListener("click",function(){
+        document.querySelector(".bg-modalsignup").style.display="none";
+    })
+
+</script>
