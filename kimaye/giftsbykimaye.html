@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         
+
+        button{
+          width: 80px;
+          font-size: 10px;
+          padding: 1px;
+          border: hidden;
+        }
+        #giftkimaye{
+          margin: auto;
+          width: 95%;
+          height: auto;
+          /* border: 2px solid black; */
+          display: grid;
+          grid-template-columns: repeat(3,1fr);
+          grid-template-rows: repeat(auto,auto);
+          gap: 10px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+        img{
+          width: 100%;
+          border-radius: 20px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  
+        }
+        #giftkimaye>div>button{
+          background-color:#437111 ;
+          color: #ebf0e6;
+          width: 99%;
+          height: 50px;
+          font-size: 20px;
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+        }
+  
+  
+        /* #fruitsdiv>div>button :hover {
+          color: red;
+        } */
+        #giftkimaye>div{
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+          /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+          /* border-radius: 20px; */
+        }
+        /* p{
+          border: 2px solid black;
+        } */
+      </style>
+</head>
+<body>
+    <div id="giftkimaye">
+
+    </div>
+</body>
+</html>
+<script>
+
+    var giftsbykimayearr =[
+    {
+        "img": "https://cdn.shopify.com/s/files/1/0449/5225/6667/products/2I8A7790_360x.jpg?v=1631346990",
+        "choosefruit": "CHOOSE YOUR PACK",
+        "fruitname": "Pomegranate Seeds (Arils Cup)125g",
+        "fruitprice": "₹55-₹140"
+      },
+      {
+        "img": "https://cdn.shopify.com/s/files/1/0449/5225/6667/products/2I8A7807_360x.jpg?v=1631347621",
+        "choosefruit": "CHOOSE YOUR PACK",
+        "fruitname": "Pomegranate Seeds (Arils Cup)125g",
+        "fruitprice": "₹55-₹140"
+      },
+      {
+        "img": "https://cdn.shopify.com/s/files/1/0449/5225/6667/products/2I8A7821_360x.jpg?v=1631350656",
+        "choosefruit": "CHOOSE YOUR PACK",
+        "fruitname": "Pomegranate Seeds (Arils Cup)125g",
+        "fruitprice": "₹55-₹140"
+      },
+      {
+        "img": "https://cdn.shopify.com/s/files/1/0449/5225/6667/products/I8A9400copy_360x.jpg?v=1651844098",
+        "choosefruit": "CHOOSE YOUR PACK",
+        "fruitname": "Pomegranate Seeds (Arils Cup)125g",
+        "fruitprice": "₹55-₹140"
+      },
+    ]
+    
+   giftkimayefun(giftsbykimayearr);
+   
+    
+        function giftkimayefun(arr){
+        document.querySelector("#giftkimaye").innerHTML="";
+        arr.forEach(function(element){
+        dv = document.createElement("div");
+        img = document.createElement("img");
+        addtocart = document.createElement("button");
+        pn = document.createElement("p");
+        pp = document.createElement("p");
+         img.src = element.img;
+         addtocart.innerText = element.choosefruit;
+         pn.innerText= element.fruitname;
+         pn.style.fontSize="17px";
+         pp.innerText=element.fruitprice;
+         pp.style.color = "red";
+         pp.style.fontSize = "25px";
+         dv.append(img,addtocart,pn,pp);
+        document.querySelector("#giftkimaye").append(dv);      
+        });
+    }
+</script>
