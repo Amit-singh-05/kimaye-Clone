@@ -1,0 +1,112 @@
+~<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+        width: 80px;
+        font-size: 10px;
+        padding: 1px;
+        border: hidden;
+      }
+      #freshcuts{
+        margin: auto;
+        width: 95%;
+        height: auto;
+        /* border: 2px solid black; */
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(auto,auto);
+        gap: 10px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
+      img{
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+      }
+      #freshcuts>div>button{
+        background-color:#437111 ;
+        color: #ebf0e6;
+        width: 99%;
+        height: 50px;
+        font-size: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+
+
+      /* #fruitsdiv>div>button :hover {
+        color: red;
+      } */
+      #freshcuts>div{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+        /* border-radius: 20px; */
+      }
+    </style>
+</head>
+<body>
+    <div id="freshcuts">
+
+    </div>
+</body>
+</html>
+<script>
+    var freshcuts =[
+      {
+        "img": "https://cdn.shopify.com/s/files/1/0449/5225/6667/products/47dfb7d1-d8d3-4c96-bda9-7dc85dfdec51_360x.png?v=1613364164",
+        "choosefruit": "CHOOSE YOUR PACK",
+        "fruitname": "Pomegranate Seeds (Arils Cup)125g",
+        "fruitprice": "₹55-₹140"
+      },
+      {
+        "img": "https://cdn.shopify.com/s/files/1/0449/5225/6667/products/24d0f9c9-fe83-40a3-84ab-300e73e4ff8d_360x.png?v=1611811511",
+        "choosefruit": "CHOOSE YOUR PACK",
+        "fruitname": "Coconut Chunks Cup(100g)",
+        "fruitprice": "₹51-₹130"
+      },
+      {
+        "img": "https://cdn.shopify.com/s/files/1/0449/5225/6667/products/0fce7fd6-f30e-45df-8c52-234acbd62023_360x.png?v=1611811509",
+        "choosefruit": "CHOOSE YOUR PACK",
+        "fruitname": "Grated Coconut Punnet",
+        "fruitprice": "₹51"
+      },
+      {
+        "img": "https://cdn.shopify.com/s/files/1/0449/5225/6667/products/62cef687-de59-4f5a-acf3-4df1238c3e29-min_360x.png?v=1614324446",
+        "choosefruit": "CHOOSE YOUR PACK",
+        "fruitname": "Kimaye Arils-Coco Cup(125G)",
+        "fruitprice": "₹55-₹140"
+      },
+
+    ]
+    freshcutsfun(freshcuts);
+    function freshcutsfun(arr){
+        document.querySelector("#freshcuts").innerHTML="";
+        arr.forEach(function(element){
+        dv = document.createElement("div");
+        img = document.createElement("img");
+        addtocart = document.createElement("button");
+        pn = document.createElement("p");
+        pp = document.createElement("p");
+         img.src = element.img;
+         addtocart.innerText = element.choosefruit;
+         pn.innerText= element.fruitname;
+         pn.style.fontSize="17px";
+         pp.innerText=element.fruitprice;
+         pp.style.color = "red";
+         pp.style.fontSize = "25px";
+         dv.append(img,addtocart,pn,pp);
+        document.querySelector("#freshcuts").append(dv);      
+        });
+    }
+</script>
