@@ -983,6 +983,7 @@ hr {
   width: 90%;
   position: relative;
   margin: auto;
+  z-index: 1;
 }
 .swiper {
   /* border: 1px solid red; */
