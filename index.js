@@ -1,13 +1,14 @@
 
   //to open popup
-  if(Number(localStorage.getItem("login"))==0){
-    document.querySelector(".c3").addEventListener("click",function(){
-      document.querySelector(".bg-modal").style.display="flex";
-  })
-  }else{
+  if(Number(localStorage.getItem("login"))==1){
     document.querySelector(".c3").addEventListener("click",function(){
       document.querySelector(".bg-modal").style.display="none";
       document.querySelector(".c3").setAttribute("href","myaccount.html")
+  })
+  }else{
+    document.querySelector(".c3").addEventListener("click",function(){
+      document.querySelector(".bg-modal").style.display="flex";
+      
   })
   }
  
@@ -55,6 +56,7 @@
             alert ("please fill all  required data")
         }else{
           document.querySelector(".bg-modalsignup").style.display="none";
+          window.location.reload()
         } 
   })
   //********************************
@@ -77,7 +79,7 @@
     }
   //********************************
   //loginpage
-  let backenddata = JSON.parse(localStorage.getItem("useardata"));
+  let backenddata = JSON.parse(localStorage.getItem("useardata"))||[];
     
     document.querySelector(".login").addEventListener("click",handlelogin)
     function handlelogin(){
@@ -86,12 +88,14 @@
         let lemail = document.querySelector("#lmail").value;
         let lpass = document.querySelector("#lpassword").value;
         //*****************************************************
-        backenddata.forEach(function(elem){
-        if(elem.iemail==lemail&&elem.ipass==lpass){
-            flag=true;
+        if(backenddata.length>0){
+          backenddata.forEach(function(elem){
+            if(elem.iemail==lemail&&elem.ipass==lpass){
+                flag=true;
+            }
+        });
         }
         
-    });
     //**********************************************************
     if(flag == true){
         
@@ -99,7 +103,7 @@
           document.querySelector(".bg-modal").style.display="none";
           localStorage.setItem("login",1)
           window.location.reload()
-        }else{
+        }else {
             
             alert ("Wrong login credentials")
             localStorage.setItem("login",0)
