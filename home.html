@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>kimaye</title>
+   
     <style>
-      body {
+      body{
         margin: 0%;
         padding: 0%;
         box-sizing: border-box;
         background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/jazz-bg-texture-min_1.jpg?v=1616673456);
       }
-      #not {
+      #not{
         background-color: green;
         color: white;
         width: 100%;
@@ -21,13 +22,14 @@
         display: flex;
         justify-content: center;
         line-height: 0%;
+        
       }
-      #nav {
+      #nav{
         background-color: white;
         width: 100%;
         height: 70px;
         position: sticky;
-        z-index: 90;
+        z-index: 2;
         top: 0px;
         display: flex;
         justify-content: space-around;
@@ -35,23 +37,23 @@
       }
       #nav > div {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3,1fr);
         align-items: center;
       }
-      #nav > div:nth-child(1) > ul {
+      #nav > div:nth-child(1)>ul {
         height: 100%;
         display: flex;
         align-items: center;
         color: white;
       }
-      #nav > div:nth-child(1) > ul > li {
+      #nav > div:nth-child(1)>ul>li{
         width: 120px;
         height: 100%;
         display: flex;
         align-items: center;
         font-size: 1rem;
       }
-      #nav > div:nth-child(1) > ul > li > a {
+      #nav > div:nth-child(1)>ul>li>a{
         text-decoration: none;
         color: black;
       }
@@ -61,17 +63,18 @@
         align-items: center;
         gap: 40px;
       }
-      .sop {
+      .sop{
         display: none;
       }
-      .sop > ul > li > a {
+      .sop>ul>li>a{
         text-decoration: none;
         color: gray;
+        
       }
-      .sop > ul > li {
-        list-style-type: none;
+      .sop>ul>li{
+       list-style-type: none;
       }
-      #nav > div:nth-child(1) > ul > li:hover > .sop {
+      #nav > div:nth-child(1)>ul>li:hover>.sop{
         width: 15%;
         display: grid;
         text-align: left;
@@ -80,27 +83,28 @@
         margin-top: 370px;
         margin-left: 10px;
       }
-      #nav > div:nth-child(1) > ul > li:hover > .sop > ul > li {
-        width: 80%;
+      #nav > div:nth-child(1)>ul>li:hover>.sop>ul>li{
+        width:80%;
         padding: 0.1%;
       }
-      #nav > div:nth-child(1) > ul > li:hover .sop > ul > li > a:hover {
+      #nav > div:nth-child(1)>ul>li:hover .sop>ul>li>a:hover{
         width: 150px;
         padding: 0.5%;
         color: green;
       }
       /* ********************** */
-      .lrn {
+      .lrn{
         display: none;
       }
-      .lrn > ul > li > a {
+      .lrn>ul>li>a{
         text-decoration: none;
         color: gray;
+        
       }
-      .lrn > ul > li {
-        list-style-type: none;
+      .lrn>ul>li{
+       list-style-type: none;
       }
-      #nav > div:nth-child(1) > ul > li:hover > .lrn {
+      #nav > div:nth-child(1)>ul>li:hover>.lrn{
         width: 15%;
         display: grid;
         text-align: left;
@@ -109,11 +113,11 @@
         margin-top: 185px;
         margin-left: 10px;
       }
-      #nav > div:nth-child(1) > ul > li:hover > .lrn > ul > li {
-        width: 80%;
+      #nav > div:nth-child(1)>ul>li:hover>.lrn>ul>li{
+        width:80%;
         padding: 0.1%;
       }
-      #nav > div:nth-child(1) > ul > li:hover .lrn > ul > li > a:hover {
+      #nav > div:nth-child(1)>ul>li:hover .lrn>ul>li>a:hover{
         width: 150px;
         padding: 0.5%;
         color: green;
@@ -129,23 +133,20 @@
         color: black;
       } */
 
-      #nav > div:nth-child(2),
-      img {
+      #nav > div:nth-child(2),img{
         display: flex;
       }
-      #nav > div:nth-child(3) {
+      #nav > div:nth-child(3){
         display: flex;
         gap: 20px;
       }
-
-      .c2 > img,
-      .c3 > img,
-      .c4 > img {
+      
+     .c2>img,.c3>img,.c4>img{
         background-color: white;
         width: 100%;
         height: 100%;
       }
-      .c1 {
+      .c1{
         border: none;
         width: 100%;
         display: flex;
@@ -153,23 +154,22 @@
         height: 40%;
         background-color: white;
       }
-      .c1 > img {
+      .c1>img{
         height: 100%;
       }
-      .c2,
-      .c3,
-      .c4 {
-        border: none;
-        height: 40%;
-        background-color: white;
-      }
-
+     .c2,.c3,.c4{
+      border: none;
+      height: 40%;
+      background-color: white;
+     }
+     
       /* ---------------------------------------------- nav CSS end */
       #kim_reward {
         background-color: gray;
         width: 200px;
         height: 62px;
         position: fixed;
+        z-index: 1;
         bottom: 20px;
         left: 15px;
         border-radius: 50px;
@@ -177,13 +177,12 @@
         color: white;
         justify-content: center;
         align-items: center;
-        z-index: 99;
       }
-      #kim_reward > p {
+      #kim_reward>p{
         font-weight: bold;
         margin-left: 10px;
       }
-      #kim_reward:hover {
+      #kim_reward:hover{
         cursor: pointer;
       }
       /* --------------------------------- end of kim reward fixed */
@@ -192,449 +191,498 @@
         background-color: transparent;
         height: 60px;
         position: fixed;
+        z-index: 1;
         bottom: 20px;
         right: 25px;
         border: none;
-        z-index: 99;
       }
-      button:hover {
+      button:hover{
         cursor: pointer;
       }
-
+      
       /* ----------------------------------- end of chat fixed  */
       /* ********************************************** */
-      .bg-modal {
+  
+        .bg-modal{
+            width: 100%;
+            height: 900px;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            z-index: 3;
+            top: 0;
+            display: flex;
+            justify-content: end;
+            display: none;
+        }
+            #lbox{
+                width: 25%;
+                z-index: 3;
+                background-color: white;
+            }
+            #lhead{
+                background-color: black;
+                width: 100%;
+                color: white;
+                display: flex;
+                align-items: center;
+                height: 80px;
+            }
+            #lhead>.close-{
+            display: inline-block;
+            background-color: transparent;
+            width: 12%;
+            color: white;
+            font-size: 19px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            padding: 8px 25px;
+            position: relative;
+            }
+            .close-.closex::after{
+            position: absolute;
+            right: 3%;
+            bottom: 8%;
+            content: "-";
+            color: white;
+            font-size: 35px;
+            }
+            .close-.closex:hover:after{
+            position: absolute;
+            right: 3%;
+            bottom: 1%;
+            content: "+";
+            color: white;
+            font-size: 34px;
+            font-weight: bolder;
+            transform: rotate(45deg);
+            }
+           
+            #lhead>h1{
+                font-size: 35px;
+                padding: 9%;
+            }
+            form{
+                margin-top: 40px;
+            }
+            input,label,a,button{
+                width: 90%;
+                display: block;
+                margin: 5px auto;
+                text-decoration-line: none;
+            }
+            input{
+               height: 35px;
+            }
+            
+            #lfacbook>a{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #3B5998;
+                color: white;
+                width: 100%;
+                height: 40px;
+                font-size: 13px;
+                padding-left: 1%;
+                margin-top: 40px;
+            }
+            #lfacbook>a>img{
+                height: 40px;
+            }
+            
+            #lfacbook:hover{
+                opacity: 0.5;
+                cursor: pointer;
+            }
+            #lgoogle>a{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: rgb(226, 66, 38);
+                color: white;
+                width: 100%;
+                height: 40px;
+                font-size: 13px;
+                padding-left: 1%;
+                margin-top: 10px;
+            }
+            #lgoogle>a>img{
+                height: 40px;
+            }
+            
+            #lgoogle:hover{
+                opacity: 0.5;
+                cursor: pointer;
+            }
+            #signup{
+              text-align: center;
+                padding: 3%;
+                display: grid;
+                margin: auto;
+                margin-top: 20px;
+            }
+            #signup>img{
+             width: 50%;
+             display: flex;
+             margin: auto;
+             margin-bottom: 30px;
+            }
+            
+            .login{
+                width: 93%;
+                border:2px solid black;
+                background-color: white;
+                height: 35px;
+            }
+            .login:hover{
+                cursor: pointer;
+                color: white;
+                background-color: rgb(49, 46, 46)
+            }
+            .signup{
+                color: black;
+                background-color: white;
+                width: 70%;
+                border:2px solid black;
+                height: 35px;
+                cursor: pointer;
+            }
+            /* *********************************** */
+            .bg-modalsignup{
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0);
+            position: absolute;
+            top: 0;
+            display: flex;
+            justify-content: end;
+            display: none;
+        }
+            #sbox{
+                width: 25%;
+                z-index: 4;
+                background-color: white;
+            }
+            #shead{
+                background-color: black;
+                width: 100%;
+                color: white;
+                display: flex;
+                align-items: center;
+                height: 80px;
+            }
+            #shead>.close-{
+            display: inline-block;
+            background-color: transparent;
+            width: 12%;
+            color: white;
+            font-size: 19px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            padding: 8px 25px;
+            position: relative;
+            }
+            .close-.closex::after{
+            position: absolute;
+            right: 3%;
+            bottom: 8%;
+            content: "-";
+            color: white;
+            font-size: 35px;
+            }
+            .close-.closex:hover:after{
+            position: absolute;
+            right: 3%;
+            bottom: 1%;
+            content: "+";
+            color: white;
+            font-size: 34px;
+            font-weight: bolder;
+            transform: rotate(45deg);
+            }
+           
+            #shead>h1{
+                font-size: 35px;
+                padding: 9%;
+            }
+            /* *********** */
+            form{
+                margin-top: 40px;
+            }
+            input,label,a,button{
+                width: 90%;
+                display: block;
+                margin: 5px auto;
+                text-decoration-line: none;
+            }
+            input{
+               height: 35px;
+            }
+            
+            #sfacbook>a{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #3B5998;
+                color: white;
+                width: 100%;
+                height: 40px;
+                font-size: 13px;
+                padding-left: 1%;
+                margin-top: 10px;
+            }
+            #sfacbook>a>img{
+                height: 40px;
+            }
+          
+            #sfacbook:hover{
+                opacity: 0.5;
+                cursor: pointer;
+            }
+            #sgoogle>a{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: rgb(226, 66, 38);
+                color: white;
+                width: 100%;
+                height: 40px;
+                font-size: 13px;
+                padding-left: 1%;
+                margin-top: 10px;
+            }
+            #sgoogle>a>img{
+                height: 40px;
+            }
+            #sgoogle:hover{
+                opacity: 0.5;
+                cursor: pointer;
+            }
+            #login{
+              background-color: white;
+                text-align: center;
+                padding: 3%;
+                display: grid;
+                margin: auto;
+                margin-top: 20px;
+            }
+            #login>img{
+              width: 50%;
+             display: flex;
+             margin: auto;
+             margin-bottom: 30px;
+            }
+            
+            .register{
+                margin-top:30px;
+                width: 93%;
+                border:2px solid black;
+                background-color: white;
+                height: 35px;
+            }
+            .register:hover{
+                cursor: pointer;
+                color: white;
+                background-color: rgb(49, 46, 46)
+            }
+            .slogin{
+                color: black;
+                background-color: white;
+                width: 70%;
+                border:2px solid black;
+                height: 35px;
+                cursor: pointer;
+            }
+            /* ************************************************** */
+            /* cart css */
+
+            .bg-modalcart{
+            width: 100%;
+            height: 700px;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            z-index: 3;
+            top: 0;
+            display: flex;
+            justify-content: end;
+            display: none;
+        }
+            #cbox{
+                width: 25%;
+                height: auto;
+                background-color: white;
+            }
+            #chead{
+                background-color: black;
+                width: 100%;
+                color: white;
+                display: flex;
+                align-items: center;
+                height: 80px;
+            }
+            #chead>.close-{
+            display: inline-block;
+            background-color: transparent;
+            width: 12%;
+            color: white;
+            font-size: 19px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            padding: 8px 25px;
+            position: relative;
+            }
+            .close-.closex::after{
+            position: absolute;
+            right: 3%;
+            bottom: 8%;
+            content: "-";
+            color: white;
+            font-size: 35px;
+            }
+            .close-.closex:hover:after{
+            position: absolute;
+            right: 3%;
+            bottom: 1%;
+            content: "+";
+            color: white;
+            font-size: 34px;
+            font-weight: bolder;
+            transform: rotate(45deg);
+            }
+           
+            #chead>h1{
+                font-size: 35px;
+                padding: 9%;
+            }
+            /* *********** */
+           #cartitm{
+            display: flex;
+           }
+           .CONTINUESHOPPING{
+                margin-top:30px;
+                width: 93%;
+                border: none;
+                background-color: rgb(153, 150, 150)134, 128, 128;
+                height: 35px;
+            }
+           .CONTINUESHOPPING:hover{
+                cursor: pointer;
+                color: white;
+                background-color: rgb(49, 46, 46)
+            }
+            /*location css*/
+            /* ************************************** */
+            .bg-modallocation{
+              width: 100%;
+              height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            z-index: 3;
+            top: 0;
+            justify-content: center;
+            align-items: center;
+            display: none;
+            
+        }
+            #locationbox{
+              margin-top: 3%;
+              margin-bottom: 3%;
+                width: 45%;
+                background-color: white;
+                padding: 1%;
+                text-align: center;
+            }
+            #locationbox>img{
+                width: 100%;
+                height: 250px;
+            }
+            .location{
+               margin-top: 20px;
+               border-radius: 10px;
+               height: 35px;
+               width: 30%;
+               border: 1px solid green;
+               color: green;
+               background-color: white;
+            }
+           .location:hover{
+            cursor: pointer;
+            color: white;
+            background-color: rgb(49, 46, 46)
+            }
+            .licationclose{
+            position: absolute;
+            top:0;
+            left:50%;
+            color: white;
+            font-size: 100px;
+            font-weight: bolder;
+            transform: rotate(45deg);
+            }
+    
+            /* ********************************************************* */
+            /* put your css  */
+
+
+      /* ---------------------------- last portion CSS */
+      #last{
+        border: 1px solid transparent;
+        background-color:#7d9c5b;
         width: 100%;
-        height: 900px;
-        background-color: rgba(0, 0, 0, 0.7);
-        position: absolute;
-        top: 0;
-        display: flex;
-        justify-content: end;
-        display: none;
+        height: 290px;
+        /* margin-top: 70px; */
       }
-      #lbox {
-        width: 25%;
-        background-color: white;
-        z-index: 100;
-      }
-      #lhead {
-        background-color: black;
-        width: 100%;
-        color: white;
-        display: flex;
-        align-items: center;
-        height: 80px;
-      }
-      #lhead > .close- {
-        display: inline-block;
-        background-color: transparent;
-        width: 12%;
-        color: white;
-        font-size: 19px;
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        padding: 8px 25px;
-        position: relative;
-      }
-      .close-.closex::after {
-        position: absolute;
-        right: 3%;
-        bottom: 8%;
-        content: "-";
-        color: white;
-        font-size: 35px;
-      }
-      .close-.closex:hover:after {
-        position: absolute;
-        right: 3%;
-        bottom: 1%;
-        content: "+";
-        color: white;
-        font-size: 34px;
-        font-weight: bolder;
-        transform: rotate(45deg);
-      }
-
-      #lhead > h1 {
-        font-size: 35px;
-        padding: 9%;
-      }
-      form {
-        margin-top: 40px;
-      }
-      input,
-      label,
-      a,
-      button {
-        width: 90%;
-        display: block;
-        margin: 5px auto;
-        text-decoration-line: none;
-      }
-      input {
-        height: 35px;
-      }
-
-      #lfacbook > a {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #3b5998;
-        color: white;
-        width: 100%;
-        height: 40px;
-        font-size: 13px;
-        padding-left: 1%;
-        margin-top: 40px;
-      }
-      #lfacbook > a > img {
-        height: 40px;
-      }
-
-      #lfacbook:hover {
-        opacity: 0.5;
-        cursor: pointer;
-      }
-      #lgoogle > a {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: rgb(226, 66, 38);
-        color: white;
-        width: 100%;
-        height: 40px;
-        font-size: 13px;
-        padding-left: 1%;
-        margin-top: 10px;
-      }
-      #lgoogle > a > img {
-        height: 40px;
-      }
-
-      #lgoogle:hover {
-        opacity: 0.5;
-        cursor: pointer;
-      }
-      #signup {
-        text-align: center;
-        padding: 3%;
-        display: grid;
-        margin: auto;
-        margin-top: 20px;
-      }
-      #signup > img {
-        width: 50%;
-        display: flex;
-        margin: auto;
-        margin-bottom: 30px;
-      }
-
-      .login {
-        width: 93%;
-        border: 2px solid black;
-        background-color: white;
-        height: 35px;
-      }
-      .login:hover {
-        cursor: pointer;
-        color: white;
-        background-color: rgb(49, 46, 46);
-      }
-      .signup {
-        color: black;
-        background-color: white;
+      #last>div:first-child{
         width: 70%;
-        border: 2px solid black;
-        height: 35px;
-        cursor: pointer;
-      }
-      /* *********************************** */
-      .bg-modalsignup {
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0);
-        position: absolute;
-        top: 0;
-        display: flex;
-        justify-content: end;
-        display: none;
-      }
-      #sbox {
-        width: 25%;
-        background-color: white;
-      }
-      #shead {
-        background-color: black;
-        width: 100%;
-        color: white;
-        display: flex;
-        align-items: center;
-        height: 80px;
-      }
-      #shead > .close- {
-        display: inline-block;
-        background-color: transparent;
-        width: 12%;
-        color: white;
-        font-size: 19px;
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        padding: 8px 25px;
-        position: relative;
-      }
-      .close-.closex::after {
-        position: absolute;
-        right: 3%;
-        bottom: 8%;
-        content: "-";
-        color: white;
-        font-size: 35px;
-      }
-      .close-.closex:hover:after {
-        position: absolute;
-        right: 3%;
-        bottom: 1%;
-        content: "+";
-        color: white;
-        font-size: 34px;
-        font-weight: bolder;
-        transform: rotate(45deg);
-      }
-
-      #shead > h1 {
-        font-size: 35px;
-        padding: 9%;
-      }
-      /* *********** */
-      form {
-        margin-top: 40px;
-      }
-      input,
-      label,
-      a,
-      button {
-        width: 90%;
-        display: block;
-        margin: 5px auto;
-        text-decoration-line: none;
-      }
-      input {
-        height: 35px;
-      }
-
-      #sfacbook > a {
+        margin-left: 100px;
+       
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        background-color: #3b5998;
-        color: white;
-        width: 100%;
-        height: 40px;
-        font-size: 13px;
-        padding-left: 1%;
-        margin-top: 10px;
       }
-      #sfacbook > a > img {
-        height: 40px;
-      }
+      #last>div:first-child>div>h3:hover{
+        color: red;
+        cursor: pointer;
 
-      #sfacbook:hover {
-        opacity: 0.5;
+      }
+      #last>div:first-child>div>img{
         cursor: pointer;
       }
-      #sgoogle > a {
+      hr{
+        margin-top: 0px;
+        width: 85%;
+        margin-left: 80px;
+        border: 1px solid gray;
+      }
+      .follow{
+        display: flex;
+        gap: 5px;
+      }
+      #last>div:last-child{
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        background-color: rgb(226, 66, 38);
-        color: white;
-        width: 100%;
-        height: 40px;
-        font-size: 13px;
-        padding-left: 1%;
+        width: 83%;
         margin-top: 10px;
+        margin-left: 100px;
+        font-weight: bold;
       }
-      #sgoogle > a > img {
-        height: 40px;
-      }
-      #sgoogle:hover {
-        opacity: 0.5;
+      #last>div:last-child>img{
+        width: 10%;
+        height: 10%;
         cursor: pointer;
       }
-      #login {
-        background-color: white;
-        text-align: center;
-        padding: 3%;
-        display: grid;
-        margin: auto;
-        margin-top: 20px;
-      }
-      #login > img {
-        width: 50%;
-        display: flex;
-        margin: auto;
-        margin-bottom: 30px;
-      }
-
-      .register {
-        margin-top: 30px;
-        width: 93%;
-        border: 2px solid black;
-        background-color: white;
-        height: 35px;
-      }
-      .register:hover {
-        cursor: pointer;
-        color: white;
-        background-color: rgb(49, 46, 46);
-      }
-      .slogin {
-        color: black;
-        background-color: white;
-        width: 70%;
-        border: 2px solid black;
-        height: 35px;
-        cursor: pointer;
-      }
-      /* ************************************************** */
-      /* cart css */
-
-      .bg-modalcart {
-        width: 100%;
-        height: 700px;
-        background-color: rgba(0, 0, 0, 0.7);
-        position: absolute;
-        top: 0;
-        display: flex;
-        justify-content: end;
-        display: none;
-      }
-      #cbox {
-        width: 25%;
-        height: auto;
-        background-color: white;
-        z-index: 100;
-      }
-      #chead {
-        background-color: black;
-        width: 100%;
-        color: white;
-        display: flex;
-        align-items: center;
-        height: 80px;
-      }
-      #chead > .close- {
-        display: inline-block;
-        background-color: transparent;
-        width: 12%;
-        color: white;
-        font-size: 19px;
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        padding: 8px 25px;
-        position: relative;
-      }
-      .close-.closex::after {
-        position: absolute;
-        right: 3%;
-        bottom: 8%;
-        content: "-";
-        color: white;
-        font-size: 35px;
-      }
-      .close-.closex:hover:after {
-        position: absolute;
-        right: 3%;
-        bottom: 1%;
-        content: "+";
-        color: white;
-        font-size: 34px;
-        font-weight: bolder;
-        transform: rotate(45deg);
-      }
-
-      #chead > h1 {
-        font-size: 35px;
-        padding: 9%;
-      }
-      /* *********** */
-      #cartitm {
-        display: flex;
-      }
-      .CONTINUESHOPPING {
-        margin-top: 30px;
-        width: 93%;
-        border: none;
-        background-color: rgb(153, 150, 150) 134, 128, 128;
-        height: 35px;
-      }
-      .CONTINUESHOPPING:hover {
-        cursor: pointer;
-        color: white;
-        background-color: rgb(49, 46, 46);
-      }
-      /*location css*/
-      /* ************************************** */
-      .bg-modallocation {
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
-        position: absolute;
-        top: 0;
-        justify-content: center;
-        align-items: center;
-        display: none;
-        z-index: 200;
-      }
-      #locationbox {
-        margin-top: 3%;
-        margin-bottom: 3%;
-        width: 45%;
-        background-color: white;
-        padding: 1%;
-        text-align: center;
-      }
-      #locationbox > img {
-        width: 100%;
-        height: 250px;
-
-      }
-      .location {
-        margin-top: 20px;
-        border-radius: 10px;
-        height: 35px;
-        width: 30%;
-        border: 1px solid green;
-        color: green;
-        background-color: white;
-
-      }
-      .location:hover {
-        cursor: pointer;
-        color: white;
-        background-color: rgb(49, 46, 46);
-
-      }
-      .licationclose {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        color: white;
-        font-size: 100px;
-        font-weight: bolder;
-        transform: rotate(45deg);
-
-      }
-
-      /* ********************************************************* */
-
-      /* put your css  */
-
-      /* -----------------------------------------------------------------------silder design  */
-      .slider_box {
+      /* -------------------------------------- end of the last portioin ---------- */
+/* ******************************************* */
+/* **************************************** */
+.home{
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+  height: auto;
+}
+ /* -----------------------------------------------------------------------silder design  */
+ .slider_box {
         width: 100%;
         /* position: relative; */
         overflow: hidden;
@@ -654,9 +702,10 @@
         /* padding: 5px 10px; */
         border-radius: 30px;
         position: absolute;
+        z-index: 1;
         top: 400px;
         left: 80px;
-        z-index: 1;
+        
       }
      .shop > a {
         text-decoration: none;
@@ -818,6 +867,66 @@
 
 
 
+      /* ------------- starting jazz css part  */
+
+      .jazz{
+        border: 1px solid red;
+        width: 100%;
+        height: 550px;
+      }
+      .jazz>h1{
+        text-align: center;
+        margin-bottom:50px ;
+      }
+
+      .photo-move{
+        border: 1px solid palevioletred;
+        width: 80%;
+        height: 400px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+        
+      }
+
+      .photo-move>div{
+        border: 1px solid blue;
+        border-radius: 30px;
+        
+      }
+
+      .photo-move>div>h3{
+        color: white;
+        text-shadow: 0 5px 20px #000000;
+        font-size: 1.7em;
+        margin-top:250px ;
+        margin-left: 10px;
+      }
+
+      .photo-move>div>p{
+        width: 95%;
+        color: white;
+        text-shadow: 2px 2px 20px #000000;
+        font-weight: bold;
+        margin-left: 10px;
+      }
+
+      .back1{
+        background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_334275008-2-opt2-1900px_720x.jpg?v=1627119119);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      
+      }
+
+      
+
+      .back2{
+        background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_201343750_copy__66kb-1000px_720x.jpg?v=1626676701);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+
        /* ----------------------------------------------------- loking for us */
        #forus{
         position: relative;
@@ -935,7 +1044,7 @@
       /* -------------------------------------- end of the last portioin ---------- */
     </style>
   </head>
-  <body>
+  <body >
     <div id="not">
       <p>Delivering in Mumbai and Delhi | Same day delivery!</p>
     </div>
@@ -943,31 +1052,21 @@
     <div id="nav">
       <div>
         <ul>
-          <li>
-            <a href="#">SHOP ▼</a>
-            <div class="sop">
-              <ul>
-                <li class="ALLFRUITS"><a href="#">ALL FRUITS</a></li>
-                <li class="FRESHCUTS"><a href="#">FRESH CUTS</a></li>
-                <li class="FRUITCOMBOS"><a href="#">FRUIT COMBOS</a></li>
-                <li class="GIFTSBYKIMAYE"><a href="#">GIFTS BY KIMAYE</a></li>
-                <li class="GRAPEFAMILYBYKIMAYE">
-                  <a href="#">GRAPE FAMILY BY KIMAYE</a>
-                </li>
-                <li class="RETURNANDREPLACEMENT">
-                  <a href="#">RETURN AND REPLACEMENT</a>
-                </li>
-                <li class="FRUITSXSUBSCRIPTION">
-                  <a href="#">FRUITS X SUBSCRIPTION</a>
-                </li>
-                <li class="COMMUNITYBUYING">
-                  <a href="#">COMMUNITY BUYING</a>
-                </li>
-              </ul>
-            </div>
+          <li><a href="#">SHOP ▼</a>
+          <div class="sop">
+            <ul>
+              <li class="ALLFRUITS"><a href="#">ALL FRUITS</a></li>
+              <li class="FRESHCUTS"><a href="#">FRESH CUTS</a></li>
+              <li class="FRUITCOMBOS"><a href="#">FRUIT COMBOS</a></li>
+              <li class="GIFTSBYKIMAYE"><a href="#">GIFTS BY KIMAYE</a></li>
+              <li class="GRAPEFAMILYBYKIMAYE"><a href="#">GRAPE FAMILY BY KIMAYE</a></li>
+              <li class="RETURNANDREPLACEMENT"><a href="#">RETURN AND REPLACEMENT</a></li>
+              <li class="FRUITSXSUBSCRIPTION"><a href="#">FRUITS X SUBSCRIPTION</a></li>
+              <li class="COMMUNITYBUYING"><a href="#">COMMUNITY BUYING</a></li>
+            </ul>
+          </div>
           </li>
-          <li>
-            <a href="#">LEARN ▼</a>
+          <li><a href="#">LEARN ▼</a>
             <div class="lrn">
               <ul>
                 <li class="OURSTORY"><a href="#">OUR STORY</a></li>
@@ -994,223 +1093,169 @@
         />
       </div>
       <div>
-        <button class="c1">
-          <img
-            src="https://cdn.icon-icons.com/icons2/2642/PNG/512/google_map_location_logo_icon_159350.png"
-            alt=""
-          />
-          <p>Mumbai</p>
-        </button>
-
+    
+          <button class="c1">
+            <img src="https://cdn.icon-icons.com/icons2/2642/PNG/512/google_map_location_logo_icon_159350.png" alt="">
+            <p>Mumbai</p>
+          </button>
+        
+      
         <button class="c2">
-          <img
-            src="data:image/png;base64,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"
-            alt=""
-          />
+          <img src="data:image/png;base64,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" alt="">
+          <a href="#"></a>
         </button>
-        <button class="c3">
-          <img
-            src="https://icons-for-free.com/download-icon-person-1324760545186718018_512.png"
-            alt=""
-          />
-        </button>
+        <a href="#" class="c3">
+          <img src="https://icons-for-free.com/download-icon-person-1324760545186718018_512.png" alt="">
+        </a>
         <button class="c4">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTNaowAGbiwUAuj7TSVXYZWlRvRr9iy_JaDA&usqp=CAU"
-            alt=""
-          />
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTNaowAGbiwUAuj7TSVXYZWlRvRr9iy_JaDA&usqp=CAU" alt="">
         </button>
-        <!-- cart and alll -->
+       <!-- cart and alll -->
       </div>
     </div>
     <!-- -------------------------------------------------------------------- Nvbar End -->
     <!-- kim reward fixed position -->
     <div id="kim_reward">
-      <img
-        width="35"
-        height="40"
-        src="	https://cdn.sweettooth.io/v1/images/launcher_icons/bag.svg?color=%23FFFFFF"
-        alt=""
-      />
+      <img 
+      width="35"
+      height="40"
+      src="	https://cdn.sweettooth.io/v1/images/launcher_icons/bag.svg?color=%23FFFFFF" alt="">
       <p>Kimaye Rewards</p>
     </div>
     <!-- chat button fixed position -->
     <button id="chat">
-      <img
-        width="100%"
-        src="https://cdn.live.zoko.io/store/customers/d9b85c58-d794-4956-a18e-c36f838226bb-zo-ko-Icon.svg"
-        alt=""
-      />
+      <img 
+      width="100%"
+      src="https://cdn.live.zoko.io/store/customers/d9b85c58-d794-4956-a18e-c36f838226bb-zo-ko-Icon.svg" alt="">
+    
     </button>
     <!-- -------------------------- Crauser --------------------- -->
     <!-- ******************************************************************************************************************** -->
-    <!-- ******************************************** -->
+        <!-- ******************************************** -->
     <!-- login page -->
+    
     <div class="bg-modal">
       <div id="lbox">
-        <div id="lhead">
-          <!-- <div>heading here</div> -->
-          <h1>SIGN IN</h1>
-          <a href="#" class="close- closex" id="close">CLOSE</a>
-        </div>
-        <form>
-          <!-- login inputs here -->
-          <label>Email address</label>
-          <input type="email" id="lmail" required />
-          <label>password</label>
-          <input type="password" id="lpassword" required />
-          <a href="#">Forgot your password?</a>
-          <button class="login">LOGIN</button>
-        </form>
-        <div>
-          <div id="lfacbook">
-            <a href="https://www.facebook.com/">
-              <h2>Sign in with Facebook</h2>
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0iOewmwpKr8D0RZYHZ_fKVxjO7G287chknQ&usqp=CAU"
-                alt=""
-              />
-            </a>
+          <div id="lhead">
+              <!-- <div>heading here</div> -->
+              <h1>SIGN IN</h1>
+              <a href="#" class="close- closex" id="close">CLOSE</a>
           </div>
-          <div id="lgoogle">
-            <a
-              href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin"
-            >
-              <h2>Sign in with Google</h2>
-              <img
-                src="data:image/jpeg;base64,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"
-                alt=""
-              />
-            </a>
+          <form>
+              <!-- login inputs here -->
+              <Label>Email address</Label>
+              <input type="email" id="lmail" required>
+              <Label>password</Label>
+              <input type="password" id="lpassword" required>
+              <a href="#">Forgot your password?</a>
+              <button class="login">LOGIN</button>
+          </form>
+          <div>
+              <div id="lfacbook" >
+                  <a href="https://www.facebook.com/">
+                      <h2>Sign in with Facebook</h2>
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0iOewmwpKr8D0RZYHZ_fKVxjO7G287chknQ&usqp=CAU" alt="">
+                  </a>
+              </div>
+              <div id="lgoogle">
+                  <a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+                      <h2>Sign in with Google</h2>
+                      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ8NDQ0NFREWFhURFRUYHSsgGBoxGxUVITEtJSkrLjowGB8zOD8sNygtLy0BCgoKDg0OFxAQFi0iHR4rKy0rKy0rKy0rKysvLSsrKysrLS0uKysvKystLS0rKy0rLSstKy0rKystLSsrLS0rLf/AABEIAOEA4QMBEQACEQEDEQH/xAAbAAEBAAMBAQEAAAAAAAAAAAAAAQIEBgUHA//EAEMQAAICAAIFBgcNCAMAAAAAAAABAgMEEQUGITFREiJBYYGRE1NxcpOhsRUWIzI0UlRic7LB0dIHFDNCkqLC4UNjgv/EABoBAQEAAwEBAAAAAAAAAAAAAAABAwQFAgb/xAA0EQEAAgEBAwgJBAMBAAAAAAAAAQIDBBEhMQUSMkFRkbHRExQiUmFxgaHwFTM04UJTwSP/2gAMAwEAAhEDEQA/APUOO+2AgBQAAIoAooAIAUAACKAAoAAEAKAAoAqAFIAQKAGseWcABACgAARQBRQAQIKUAARQAFAAAigAAFCBQApACKUah5Z1AAAgBQAAIoAClAIEFKAAIoACgAAFCAACgCoAUgBGqRnAKAABACgAARQBRQAQAoABmEUABQAAAEUABQBUAKQahGZQAFAAAigAAAIAAKUAARQAAChFAoAAEAKAAoAqBBqnlmCigAKAABAAAAAMwhmBYpy3JvybSkzs4v1WFte6q1+Sub/AvNnsY/S096O+GM65x+NGUfOi0TZMPUWieEsEwq5gUChACgUAEAKBQAQA1SM4RAooAAAABDMBmBv6N0PicVtqrfI6bJ82tdvT2ZmSmK1+ENbPq8WHpTv7Ov8APm6bBamVRyd9srH82HMh5M979RtV0sf5S5WXla8/t12fPf8A14vaw2hcJV8TD1ZrplHly75ZszRipHCGhfV5r8bz4eDejFLYkkuCWRkYJmZ4qEANXEaOw9v8SmqfW4Rz7955mlZ4wy0z5adG0x9XjY3VDDzzdMp0y6Fn4SHc9vrMFtNWeG5v4uVMtenG37T+fRzGk9C4jC7bIcqvothzodvDtNW+K1OLrYNXizdGd/ZPF5xjbKgUIoFABACgAKBqnlmAARSgAAAQC1wlKSjFOUpPKMYrNt8EhEbXmZisbZnc7TQWqcYJWYtKc96p3wh53zn6vKb2LTxG+zhavlObezi3R29f07PH5OpikkkkklsSWxJG05EztUAAAAAAACNJpprNPY09qaBE7HI6w6sJKV2Fjuzc6Fw4w/Lu4Gnm0/XXudrR8o7dlMs/KfPz73Jo1HZVAVBFAoAIAUABqnlmUAAKgAAAEm2kk220kks230IJM7N8voOrGgY4WCttSeImtvSqk/5V18WdHDh5kbZ4vm9drZzW5tejH3+Pk94zucAAAGvicfRT/Fuqr6pzjF9zPM3rHGWSmHJfo1mfo03rFgfpNfra9h49NTtZ/UdR7ktrC6Sw92yq+qx8Izi5d2891vW3CWG+DLj6VZj6No9MQAAAcVrhodVS/eqllCbytit0ZvdLyP2+U0tRi2e1Dvcm6vnx6K3GOHy7Po5k1XVUIyAoAABQgBqnlmAKBCgEAIB1epGiVOTxdizjBuNKe5z6Z9m5defA29Nj2+1Lj8qanmx6KvXx+XY7Y3XBAAGppLSFWFrdt0so7kltlOXzYrpZ5veKRtlmw4L5rc2kOC0trRicQ2oSdFXRGt5Ta+tPf3ZGhfPa3DdD6DT8nYsW+0c6fj5PD6+l7+swt8AoHvaG1oxGHajY3fT0xm87Ir6sn7H6jPjz2rx3w5+p5Ox5d9fZn7fWHe4HGVYiuNtUlKEu9PpTXQzeraLRth89lxWxWmt43tg9MYB+GOrrnVZC1pVyhJTcmkkst+b3Hm0RMTE8GTFa1bxNOMcHyyyKjKUVJSUZNKS3SSe9dRyp3PrqztiJ2bBBVCKgKAABADVPLOoQKAACAZUVSsnCuG2U5RhHyt5IsRtnZDxe0UrNp4Q+sYHCxoqrph8WuKiuvi3157Tq1rFYiIfH5ck5LzeeMv3PTGAYXWxrhKc2owhFylJ7lFLNskzsjbL1Ws2mKxxl8t05pWeMvdks1BZxqh8yH5ve/wDSOZkyTe219XpdNXBj5sceufj+cGgeGyBFAAAPU0BpeeDuUtrqnkrYcY/OXWv9GTFkmk/BqavSxnps644T+dT6ZVZGcYzg1KM4qUZLc4tZpnSidsbYfLWrNZmJ4w8XS+tGHw+cK/h7Vs5MHzIv60vyzMOTPWu6N8t/T8nZMu+3sx+dTjNJ6WxGKeds+bnmq482uPZ09ppXyWvxdzBpceGPYjf29bSR4Z2SAoFQRQKAAAap5ZgChEKAEYHvak4XwmMU2tlMJT/9Pmr2t9hsaau2+3sc3lTJzMGz3p2f9fRDoPmgABy+vuO8HRCiLyd8m5fZwyb9bj6zW1N9ldna6vJOHnZJvP8Aj4y4I0X0KoCgAgAAAby0piPALDK2SpXK5sdjae3Jvflv2dZ79Jbm83buYPVsXpPSc3e00eGZkgMkBkgigVBFAAUABqnlmAAAqIBGB2n7PaeZibOM4V/0pv8AyRu6SN0y4XLFvapX4TP53OvNtxQAB8616v5eNceiqquGXW85P7y7jn6mdt30nJVObg29sz5OfMDpKBQAQAAAKgKgjJAVAZIIqAoFCKAAAap5Z1CIAAhURgd/qDHLB2PjiJv+yC/A39L0Pq+c5Xn/AN4+UeMulNlywAB8u1qlnj8T58V3QijmZv3JfV6CNmnp+dcvLRjbbJEG7oXDwtxVFVi5UJz5Mlm1msn0raZMcRa0RLX1V7Uw2tXjEO896mj/ABD9Nd+o3vV8fZ4vn/1LU+99o8j3qaP8Q/TXfqHq+Ps8T9S1PvfaPI96mj/EP0136h6vj7PE/UtT732jyPepo/xD9Nd+oer4+zxP1LU+99o8j3qaP8Q/TXfqHq+Ps8T9S1PvfaPI96uA8Q/TW/qHq+Ps8T9S1PvfaPI962A8S/TW/qHq+Ps8T9S1PvfaPJoae1fwdOFutrqcZwUXF+EsllzktzeXSY8uGlaTMQ2NJrs+TNWtrbp+EeTi0aTvMkEUCgAigANU8s4EAAEZRiwj6BqBLPBzXDETX9kH+Jv6XofV85yvH/vHyjxl0psuWAAPl+tUctIYnrnF98Is5mb9yX1egnbp6fnXLykYm2yQHpat/LcN9qvYzLh6cNXW/wAe/wAn1E6b5MAAAAAAB5WtPyHEebH78TFn/bluaD+RT86nzZHNfUMkBQigUIAUDVPLOAAiAQCFR2v7O7uZia+E4Wf1Jr/FG7pJ3TDhcsV9qlvhMfne7A23FAAHzzXyjkYxT6LaoPP60W4tdyj3nP1MbL7e19JyVfnYOb2S51Gu6TJAehoCyMMZh5TlGEY2JylJqMYrJ7W3uMmKYi8TLW1dZtgvERtnY+i+7GD+l4b09f5nR9LT3o73zPquf/Xbuk92MH9Lw3p6/wAx6WnvR3nquf8A127pPdjB/S8N6ev8x6WnvR3nquf/AF27pPdnB/S8N6ev8x6WnvR3nquf/XbulnVpTCzkoQxOHnOTyjGN1cpN9ST2iMlZ3RMJbT5axttSYj5S2z2wgHk61fIcR5sfvxMWf9uW5oP5FPzqfN0c19QqAyAoRQAADVPLMoECAEAjKPe1JxfgsbGDfNvhKvq5Xxo+xrtM+mtsvs7XO5Uxc/BM+7O3/j6OdF8wAAOb16wDtwyuis5YeTk/snsl7E+xmvqaba7ex0+Ss3My8yeFvHqfPjnvpFQRQAEAFEA9TVj5fhvtH92Rkw/uQ1Nd/Hv8v+vqJ03ygB5OtXyDEebH78TFn/bluaD+RT86nzZHNfUKgMkBUEUCgANU8s4EAAECIyi1WyhKM4PKUJRnF8JJ5plidk7YebVi0TWeEvrWjMbHE0V3w3WRTy+bLc49jzXYdWlotWJh8dnxTiyTSeptHpiAJOKknGSTTTTT2pp70FiZidsPmOsehZYK5pJuibbqnvy+o+tetdpzM2LmT8H1Oi1cZ6b+lHHzeSYm4oAABCiAe7qdg7bMZVZGDddLk7J7ox5rSWfHathmwVmbxPY0OUcta4LVmd88I+r6SdF8wAeTrV8gxHmx+/ExZ/25bmg/kU/Op81RzX1LJBGQFQFCBBQNQjOoQAAQCFRGB0+pGmVTY8NY8q7pZ1t7oW7svI/blxNnTZObPNnrcnlTS+kr6WvGOPy/p35vvnQAB+OLwtd9cqrYKcJb4v2rgyWrFo2S948lsdotWdkw4jS+pt1bcsM/DV7+Q2o2x6uEvUzSyaaY6O93tPyrS0bMu6e3q/pzeIosqfJthOt8LIuD9ZrTExxdOl63jbWdvyfnmR7TMDfwehsXfl4PD2NP+aUeRDvlkjJXHe3CGtk1WHH0rx4+DptFakpZSxdil/1VNqPbPf3ZeU2aaX3pcvPytM7sUfWfJ1uHohVBV1wjCEdijFJJG1EREbIce97XnnWnbL9CvIB5OtfyDEebD78TFn/bluaD+RT86nzRHNfUs0BURGSKKRAoEGqRnAAQAAQIjKIwO/1S1jV6jhr5fDxWUJv/AJor/L27+Jv4M3O9m3F87yhoPRzOTHHs9fw/p1BsuSAAAElFNZNJrg1mgsTs4NaWjcM9rw9DfF1Qf4HnmV7GSM+WP8575frVh64fErhDzYRj7CxERwh5te1uMzL9SvAAAAYzmopyk1GMU3KTeSSW9tjgsRMzsh891o09+9z8FU2sPB7Oh2y+c+rh3+Tn5s3PnZHB9JoNF6GvOt0p+3w83hIwOgyQGREVAUooAg1TyzBQABAABCojAibWTTyaaaa2NPiB2er2uCyVOMeWWSjiOh+evx7+JuYtT1X73D1nJf8Anh7vLydlCaklKLUotZpp5primbjiTExOyWQQAAAAAAAA1NI6SowsOXdYoLbyVvnN8IrpPN71rG2ZZsODJmtspG1wGn9YrcY+Qs6qE9lee2fBzfT5N3l3mhlzTfd1PotJoaYN877dvk8ZGBvMkEZIDIChFAFADVPDMpQAAAgBAIVEAgHoaK01icI/gbOZnm6p86t9nR2ZGSmW1OEtbPpMWfpxv7ev8+br9Ha7YeeSxEJUS6ZJOyv1bV3G3TVVnpbnGzck5K78c7Y7p8nQ4THUXrOm6uzzJqTXlXQZ63rbhLm5MOTH06zDYPTGAAJKSSzbSXFvJBYjbweVjdY8FTnyr4zkv5avhXnw2bF2mK2alettYtBnycK7Pnuc3pLXa2WccNWql4yzKc+yO5duZr31Uz0YdTDyTWN+Sdvwjh5+DmL77LZudk5WTe+U22zWmZmdsurSlaRzaxshgjy9MkBkgioDIChACgANU8swBSgACAEAAQqGQEAAFvz6VufSEbdOlMVD4mJviuHhZ5d2Z7jJaOuWG2mw240juhsLWHH/AEqz+1/gevTX7WP1HT+5DCem8bLfir+yyUfYSct563qNJgjhSO5p3XTs22TnY+M5Sn7TxMzPFmrStejGz5MCPShFQFQGQFAyAqCKAABFA1TyzgQApQABACAABUQBkBAARQAFAAXIChFQGSAoFAoRQAAABrHlmAARQBQAAAgAAgQAZFABkEMgKBQAFQRUBUBQKBQARQAADVPLMoAAEUAUAAAIAAAAIAABRQigUABQARQKBQAAIoADVPLMAUAACKAKAAIAAKAABAABQARSigAKACKAAoAAEANU8s6hACgAAQApQAAAigAAAIoACgAilFIBQIgUUABQAADVPLMoQAoAAACAFKAACoIAAKEAKAAIClRSAAAFRQCAoAAB/9k=" alt="">
+                  </a>
+              </div>
+              <!-- google/facebook login here -->
           </div>
-          <!-- google/facebook login here -->
-        </div>
-        <div id="signup">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgKsrIs3wrh-AhPhoDmOPMajm6YvE4z9x_Rg&usqp=CAU"
-            alt=""
-          />
-          <h2>No account yet?</h2>
-          <p>
-            Welcome to Kimaye! Help us with a few details to know you better as
-            you take the journey of enjoying our safe and tasty fruits.
-          </p>
-          <button class="signup" id="lsignup">Create An Account</button>
-          <!-- create account option here -->
-        </div>
+          <div id="signup">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgKsrIs3wrh-AhPhoDmOPMajm6YvE4z9x_Rg&usqp=CAU" alt="">
+              <h2>No account yet?</h2>
+              <p>Welcome to Kimaye! Help us with a few details to know you better as you take the journey of enjoying our safe and tasty fruits.</p>
+              <button class="signup" id="lsignup">Create An Account</button>
+              <!-- create account option here -->
+          </div>
       </div>
-    </div>
-    <!-- ******************************************** -->
-    <!-- signup page -->
-    <div class="bg-modalsignup">
+  </div>
+  <!-- ******************************************** -->
+  <!-- signup page -->
+  <div class="bg-modalsignup">
       <div id="sbox">
-        <div id="shead">
-          <!-- <div>heading here</div> -->
-          <h1>SIGN IN</h1>
-          <a href="#" class="close- closex" id="sclose">CLOSE</a>
-        </div>
-        <div>
-          <div id="sfacbook">
-            <a href="https://www.facebook.com/">
-              <h2>Sign in with Facebook</h2>
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0iOewmwpKr8D0RZYHZ_fKVxjO7G287chknQ&usqp=CAU"
-                alt=""
-              />
-            </a>
+          <div id="shead">
+              <!-- <div>heading here</div> -->
+              <h1>SIGN IN</h1>
+              <a href="#" class="close- closex" id="sclose">CLOSE</a>
           </div>
-          <div id="sgoogle">
-            <a
-              href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin"
-            >
-              <h2>Sign in with Google</h2>
-              <img
-                src="data:image/jpeg;base64,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"
-                alt=""
-              />
-            </a>
+          <div>
+              <div id="sfacbook" >
+                  <a href="https://www.facebook.com/">
+                      <h2>Sign in with Facebook</h2>
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0iOewmwpKr8D0RZYHZ_fKVxjO7G287chknQ&usqp=CAU" alt="">
+                  </a>
+              </div>
+              <div id="sgoogle">
+                  <a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+                      <h2>Sign in with Google</h2>
+                      <img src="data:image/jpeg;base64,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" alt="">
+                  </a>
+              </div>
+              <!-- google/facebook login here -->
           </div>
-          <!-- google/facebook login here -->
-        </div>
-        <form>
-          <!-- login inputs here -->
-          <label>First Name</label>
-          <input type="text" id="fname" required />
-          <label>Last Name</label>
-          <input type="text" id="lname" required />
-          <label>Email address</label>
-          <input type="email" id="smail" required />
-          <label>password</label>
-          <input type="password" id="spassword" required />
-          <button class="register">REGISTER</button>
-        </form>
-        <div>
-          <div id="login">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgKsrIs3wrh-AhPhoDmOPMajm6YvE4z9x_Rg&usqp=CAU"
-              alt=""
-            />
-            <h2>No account yet?</h2>
-            <p>
-              Welcome to Kimaye! Help us with a few details to know you better
-              as you take the journey of enjoying our safe and tasty fruits.
-            </p>
-            <button class="slogin">Login</button>
+          <form>
+              <!-- login inputs here -->
+              <Label>First Name</Label>
+              <input type="text" id="fname" required>
+              <Label>Last Name</Label>
+              <input type="text" id="lname">
+              <Label>Email address</Label>
+              <input type="email" id="smail" required>
+              <Label>password</Label>
+              <input type="password" id="spassword" required>
+              <button class="register">REGISTER</button>
+          </form>
+          <div>
 
-            <!-- create account option here -->
+          <div id="login">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgKsrIs3wrh-AhPhoDmOPMajm6YvE4z9x_Rg&usqp=CAU" alt="">
+              <h2>No account yet?</h2>
+              <p>Welcome to Kimaye! Help us with a few details to know you better as you take the journey of enjoying our safe and tasty fruits.</p>
+              <button class="slogin">Login</button>
+              
+              <!-- create account option here -->
           </div>
-        </div>
       </div>
-    </div>
-    <!-- ************************************************************************* -->
-    <!-- *************************************************************************** -->
+  </div>
+</div>
+  <!-- ************************************************************************* -->
+  <!-- *************************************************************************** -->
     <!-- cart page -->
     <div class="bg-modalcart">
       <div id="cbox">
-        <div id="chead">
-          <!-- <div>heading here</div> -->
-          <h1>SIGN IN</h1>
-          <a href="#" class="close- closex" id="cclose">CLOSE</a>
-        </div>
-
-        <div id="cartitm">
-          <img
-            width="80px"
-            style="margin-left: 10%"
-            src="data:image/png;base64,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"
-            alt=""
-          />
-          <p style="text-align: center; margin-left: 15%">
-            No products in the cart.
-          </p>
-        </div>
-        <button class="CONTINUESHOPPING">CONTINUE SHOPPING</button>
-      </div>
-    </div>
-    <!-- ************************************************************************* -->
-    <!-- *************************************************************************** -->
-    <!-- location option -->
-    <div class="bg-modallocation">
-      <div id="locationbox">
-        <a href="#" class="licationclose" id="locclose">+</a>
-        <img
-          src="https://drpo5mjxhw4s.cloudfront.net/media/sac/popup/3.svg?v1"
-          alt=""
-        />
-        <h2>
-          We are currently available in Mumbai & Delhi. Please enter your pin
-          code below to check if we deliver to your area.
-        </h2>
-        <input type="number" placeholder="Enter your pin code" required />
-        <button class="location">Done</button>
-      </div>
-    </div>
-
-    
-
-    <!-- put your html -->
-
-
+          <div id="chead">
+              <!-- <div>heading here</div> -->
+              <h1>SIGN IN</h1>
+              <a href="#" class="close- closex" id="cclose">CLOSE</a>
+          </div>
+        
+  
+  <div id="cartitm">
+    <img width="80px" style="margin-left: 10%;" src="data:image/png;base64,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" alt="">
+    <p style="text-align: center; margin-left:15%;">No products in the cart.</p>
+  </div>
+  <button class="CONTINUESHOPPING">CONTINUE SHOPPING</button>
+  </div>
+</div>
+  <!-- ************************************************************************* -->
+  <!-- *************************************************************************** -->
+<!-- location option -->
+<div class="bg-modallocation">
+  <div id="locationbox">
+    <a href="#" class="licationclose" id="locclose">+</a>
+    <img src="https://drpo5mjxhw4s.cloudfront.net/media/sac/popup/3.svg?v1" alt="">
+    <h2>We are currently available in Mumbai & Delhi. Please enter your pin code below to check if we deliver to your area.</h2>
+    <input type="number" placeholder="Enter your pin code" required>
+    <button class="location">Done</button>
+</div>
+</div>
+<!-- put your html -->
+<div class="home" >
     <!-- --------------------------------shop button  -->
     
     
@@ -1268,7 +1313,7 @@
             <div>
                 <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/collections/recommended-1-min_570x.png?v=1614338437" alt="all fruits">
             </div>
-            <h1>ALL Fruits</h1>
+            <h1>ALL FRUITS</h1>
             <p>Pick and choose from a wide range of delicious fruits</p>
             <button>Shop Now</button>
         </div>
@@ -1277,8 +1322,8 @@
             <div>
                 <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/collections/recommended-3-min_570x.png?v=1614338730" alt="all fruits">
             </div>
-            <h1>ALL Fruits</h1>
-            <p>Pick and choose from a wide range of delicious fruits</p>
+            <h1>FRESH CUTS</h1>
+            <p>We want to spoon-feed you… quite literally</p>
             <button>Shop Now</button>
         </div>
         <!-- div 3 -->
@@ -1286,8 +1331,8 @@
             <div>
                 <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/collections/recommended-2-min_570x.jpg?v=1614339080" alt="all fruits">
             </div>
-            <h1>ALL Fruits</h1>
-            <p>Pick and choose from a wide range of delicious fruits</p>
+            <h1>FRUIT COMBOS</h1>
+            <p>Indulge in fruit combinations created by us</p>
             <button>Shop Now</button>
         </div>
         <!-- div 4 -->
@@ -1295,8 +1340,8 @@
             <div>
                 <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/2I8A6078_570x.jpg?v=1631516874" alt="all fruits">
             </div>
-            <h1>ALL Fruits</h1>
-            <p>Pick and choose from a wide range of delicious fruits</p>
+            <h1>GIFTS BY KIMAYE</h1>
+            <p>Healthy & memorable gifts for your loved ones</p>
             <button>Shop Now</button>
         </div>
     </div>
@@ -1323,7 +1368,10 @@
 
   <!-- --------------------------------------- end of empty background image - -->
 
+<!-- ------------------------------ starting jazz part  -->
 
+
+<!-- ---------------------------------- end of jazz part  -->
    <!---------------------------------------------- psst lookin; for us part-->
 
 
@@ -1363,103 +1411,155 @@
 
 
    <!-- ----------------------------------------- end of lookoin for us ----  -->
-
-
-
-    <!------------------------------------------------- las part -->
-    <div id="last">
+</div>
+   <!-- las part -->
+ <div id="last">
+  <div>
       <div>
-        <div>
           <h3>FAQ's</h3>
           <h3>Contact Us</h3>
           <h3>Shipping & Return Policy</h3>
           <h3>Terms & Conditions</h3>
           <h3>Privacy Policy</h3>
-        </div>
-        <div>
+      </div>
+      <div >
           <h3>Follow us on</h3>
           <div class="follow">
-            <a href="https://www.facebook.com/KimayeFruits/" target="_blank">
-              <img
-                src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/fb-icon.png?v=1599571756"
-                alt="facebook_icon"
-              />
-            </a>
-            <a href="https://www.instagram.com/kimayefruits/" target="_blank">
-              <img
-                src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/insta-icon.png?v=1599571756"
-                alt="instagram_icon"
-              />
-            </a>
-            <a href="https://twitter.com/kimaye_ini" target="_blank">
-              <img
-                src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/twitter-icon.png?v=1599571756"
-                alt="twitter_icon"
-              />
-            </a>
+            <a href="https://www.facebook.com/KimayeFruits/">
+              <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/fb-icon.png?v=1599571756" alt="facebook_icon">
+          </a>
+          <a href="https://www.instagram.com/kimayefruits/">
+              <img src="	https://cdn.shopify.com/s/files/1/0449/5225/6667/files/insta-icon.png?v=1599571756" alt="instagram_icon">
+          </a>
+          <a href="https://twitter.com/kimaye_ini">
+              <img src="	https://cdn.shopify.com/s/files/1/0449/5225/6667/files/twitter-icon.png?v=1599571756" alt="twitter_icon">
+          </a>
           </div>
-        </div>
+          
       </div>
-      <hr />
-      <div>
-        <p>Copyright©2020. All Rights Reserved</p>
-        <img
-          src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/ting.png?v=1599565040"
-          alt="ting"
-        />
-      </div>
-    </div>
-    <!-- ------------------------------------- the END ----------------------------- -->
+  </div>
+  <hr>
+  <div>
+    <p>Copyright©2020. All Rights Reserved</p>
+    <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/ting.png?v=1599565040" alt="ting">
+  </div>
+</div>
+<!-- ------------------------------------- the END ----------------------------- -->
   </body>
 </html>
 
+<!-- --------------------- swiper Js -----  -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- -----------------------end  code of swiper Js  -->
 <script>
   //to open popup
-  document.querySelector(".c3").addEventListener("click", function () {
-    document.querySelector(".bg-modal").style.display = "flex";
-  });
+  if(Number(localStorage.getItem("login"))==0){
+    document.querySelector(".c3").addEventListener("click",function(){
+      document.querySelector(".bg-modal").style.display="flex";
+  })
+  }else{
+    document.querySelector(".c3").addEventListener("click",function(){
+      document.querySelector(".bg-modal").style.display="none";
+      document.querySelector(".c3").setAttribute("href","myaccount.html")
+  })
+  }
+ 
   //to close popup
-  document.querySelector("#close").addEventListener("click", function () {
-    document.querySelector(".bg-modal").style.display = "none";
-  });
+  document.querySelector("#close").addEventListener("click",function(){
+      document.querySelector(".bg-modal").style.display="none";
+  })
   //to go to signup
-  document.querySelector("#lsignup").addEventListener("click", function () {
-    document.querySelector(".bg-modalsignup").style.display = "flex";
-  });
+  document.querySelector("#lsignup").addEventListener("click",function(){
+      document.querySelector(".bg-modalsignup").style.display="flex";
+  })
   //to close from signup pagr
-  document.querySelector("#sclose").addEventListener("click", function () {
-    document.querySelector(".bg-modalsignup").style.display = "none";
-    document.querySelector(".bg-modal").style.display = "none";
-  });
-  //to go to login page from signup
-  document.querySelector(".slogin").addEventListener("click", function () {
-    document.querySelector(".bg-modalsignup").style.display = "none";
-  });
+  document.querySelector("#sclose").addEventListener("click",function(){
+      document.querySelector(".bg-modalsignup").style.display="none";
+      document.querySelector(".bg-modal").style.display="none";
+  })
+  //to go to login page from signup 
+  document.querySelector(".slogin").addEventListener("click",function(){
+      document.querySelector(".bg-modalsignup").style.display="none";
+  })
   //to go to cart
-  document.querySelector(".c4").addEventListener("click", function () {
-    document.querySelector(".bg-modalcart").style.display = "flex";
-  });
+  document.querySelector(".c4").addEventListener("click",function(){
+      document.querySelector(".bg-modalcart").style.display="flex";
+  })
   //to close cart
-  document.querySelector("#cclose").addEventListener("click", function () {
-    document.querySelector(".bg-modalcart").style.display = "none";
-  });
+  document.querySelector("#cclose").addEventListener("click",function(){
+      document.querySelector(".bg-modalcart").style.display="none";
+  })
   //to CONTINUE SHOPPING
-  document
-    .querySelector(".CONTINUESHOPPING")
-    .addEventListener("click", function () {
-      document.querySelector(".bg-modalcart").style.display = "none";
-    });
+  document.querySelector(".CONTINUESHOPPING").addEventListener("click",function(){
+      document.querySelector(".bg-modalcart").style.display="none";
+  })
   //to location
-  document.querySelector(".c1").addEventListener("click", function () {
-    document.querySelector(".bg-modallocation").style.display = "flex";
-  });
+  document.querySelector(".c1").addEventListener("click",function(){
+      document.querySelector(".bg-modallocation").style.display="flex";
+  })
   // to close location locclose
-  document.querySelector("#locclose").addEventListener("click", function () {
-    document.querySelector(".bg-modallocation").style.display = "none";
-  });
+  document.querySelector("#locclose").addEventListener("click",function(){
+      document.querySelector(".bg-modallocation").style.display="none";
+  })
+  //2222222222222222222222222222222222222222222222222
+  //to close after resister
+  document.querySelector(".register").addEventListener("click",function(){
+    if(document.querySelector("#fname").value==""||document.querySelector("#smail").value==""||document.querySelector("#spassword").value==""){
+            alert ("please fill all  required data")
+        }else{
+          document.querySelector(".bg-modalsignup").style.display="none";
+        } 
+  })
   //********************************
-  //login/signup
+  //signup
+  document.querySelector(".register").addEventListener("click",handlesignup)
+    let useararr = JSON.parse(localStorage.getItem("useardata"))||[];
+    function handlesignup(event){
+        let usearobj={
+        ifname:document.querySelector("#fname").value,
+        ilname:document.querySelector("#lname").value,   
+        iemail:document.querySelector("#smail").value,
+        ipass:document.querySelector("#spassword").value
+        };
+        if(usearobj.iemail==""||usearobj.ifname==""||usearobj.ipass==""){
+            event.preventDefault()
+        }else{
+        useararr.push(usearobj);
+        localStorage.setItem("useardata",JSON.stringify(useararr));
+        }    
+    }
   //********************************
+  //loginpage
+  let backenddata = JSON.parse(localStorage.getItem("useardata"));
+    
+    document.querySelector(".login").addEventListener("click",handlelogin)
+    function handlelogin(){
+        // event.preventDefault()
+        let flag = false;
+        let lemail = document.querySelector("#lmail").value;
+        let lpass = document.querySelector("#lpassword").value;
+        //*****************************************************
+        backenddata.forEach(function(elem){
+        if(elem.iemail==lemail&&elem.ipass==lpass){
+            flag=true;
+        }
+        
+    });
+    //**********************************************************
+    if(flag == true){
+        
+          alert ("Logged in successfully")
+          document.querySelector(".bg-modal").style.display="none";
+          localStorage.setItem("login",1)
+          window.location.reload
+        }else{
+            
+            alert ("Wrong login credentials")
+            localStorage.setItem("login",0)
+        }
+    }
+    
+    console.log(localStorage.getItem("login"),typeof localStorage.getItem("login"))
   //put your js
 
 
@@ -1527,4 +1627,5 @@ let slide = document.getElementById("slider");
     btn5.classList.remove("active");
     btn6.classList.add("active");
   }
+  
 </script>
