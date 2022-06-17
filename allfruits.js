@@ -342,7 +342,13 @@ let cartarr=JSON.parse(localStorage.getItem("cartdata"))||[];
          img.src = element.img;
          addtocart.innerText= element.choosefruit;
          addtocart.addEventListener("click",function(){
-          addtocartfun(element);
+          if (cartdatapresent(cartarr, element) === false) {
+            cartarr.push(element);
+            localStorage.setItem("cartdata", JSON.stringify(cartarr));
+        }
+        else {
+            alert("Item already in cart");
+        }
         })
         //  hd.innerText= element.choosefruit;
          pn.innerText = element.fruitname;
@@ -355,9 +361,13 @@ let cartarr=JSON.parse(localStorage.getItem("cartdata"))||[];
       });
       
     }
-    function  addtocartfun(element){
-      cartarr.push(element);
-      console.log(cartarr)
-      localStorage.setItem("cartdata",JSON.stringify(cartarr))
-    }
+   
+    function cartdatapresent(cartarr, element) {
+      for (let i = 0; i < cartarr.length; i++) {
+          if (cartarr[i].img === element.img) {
+              return true;
+          }
+      }
+      return false;
+  }
 

@@ -37,10 +37,16 @@
         pn = document.createElement("p");
         pp = document.createElement("p");
          img.src = element.img;
-         addtocart.innerText = element.choosefruit;
+         addtocart.innerText= element.choosefruit;
          addtocart.addEventListener("click",function(){
-            addtocartfun(element);
-          })
+          if (cartdatapresent(cartarr, element) === false) {
+            cartarr.push(element);
+            localStorage.setItem("cartdata", JSON.stringify(cartarr));
+        }
+        else {
+            alert("Item already in cart");
+        }
+        })
          pn.innerText= element.fruitname;
          pn.style.fontSize="17px";
          pp.innerText=element.fruitprice;
@@ -50,9 +56,11 @@
         document.querySelector("#freshcuts").append(dv);      
         });
     }
-    function  addtocartfun(element){
-        cartarr.push(element);
-        console.log(cartarr)
-        localStorage.setItem("cartdata",JSON.stringify(cartarr))
+    function cartdatapresent(cartarr, element) {
+      for (let i = 0; i < cartarr.length; i++) {
+          if (cartarr[i].img === element.img) {
+              return true;
+          }
       }
-  
+      return false;
+  }
