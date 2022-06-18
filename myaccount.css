@@ -1,0 +1,48 @@
+.heading{
+    width: 100%;
+    height: 110px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  .heading>p{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 60%;
+    height: 100%;
+    justify-content: space-between;
+  }
+  .heading>p>span>a{
+   color: white;
+  }
+  .heading>p>span>a:hover{
+   text-decoration-line: underline;
+  }
+  .myaccount{
+    width: 100%;
+    height: 800px;
+    background-color: transparent;
+    
+    padding: 0px;
+    margin: 0%;
+  }
+  .logout{
+    width: 5%;
+    height: 35px;
+    background-color: white;
+    color: green;
+    border: 2px solid green;
+    border-radius: 10px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logout:hover{
+    background-color: #3B5998;
+    color: black;
+  }
