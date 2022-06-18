@@ -1,0 +1,203 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#kk {
+    width: 100%
+}
+.home{
+    color:white;
+}
+
+#box1 {
+    width: 100%;
+    height: 150px;
+    margin-top: -10px;
+    text-align: center;
+
+    background-color: green;
+    color: white;
+    text-align: center;
+}
+
+#container {
+    width: 100%;
+    display: flex;
+    gap: 70px;
+
+
+}
+
+#child1 {
+    /* border:1px solid teal; */
+    width: 60%;
+    margin: auto;
+    line-height: 20px;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto); */
+
+    margin-top: 20px;
+    margin-left: 35px;
+
+}
+
+#child1>h3 {
+    text-align: center;
+    font-size: 25px;
+}
+
+#child1>#author {
+    text-align: center;
+}
+
+#child1>p {
+    font-size: 20px;
+    line-height: 27px;
+    color: grey;
+}
+
+#child1>div {
+    display: grid;
+    text-align: center;
+    line-height: 25px;
+
+}
+
+#child1>div>a {
+    text-align: center;
+    color: grey;
+}
+
+.email {
+    height: auto;
+    width: 15%;
+    margin: auto;
+}
+
+#child2 {
+    /* border:1px solid red; */
+    width: 27%;
+    margin-top: 20px;
+
+
+}
+
+#child1>div>img:nth-child(1) {
+    width: 100%;
+    border-radius: 10px;
+    /* background-color: red; */
+}
+
+#child1>div>h3:nth-child(2) {
+    text-align: center;
+    font-size: 21px;
+}
+
+#child1>div>h3+p {
+    text-align: center;
+    font-size: 18px;
+    color: grey;
+}
+
+#child1>div>h3+p+p {
+    text-align: center;
+    color: grey;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+#search {
+    margin-bottom: 30px;
+
+}
+
+#form+h3+p {
+    color: gray;
+    margin-bottom: 20px;
+}
+
+#btn {
+    background-color: rgba(147, 243, 57, 0.767);
+}
+
+.sbox1 {
+    display: flex;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.sbox1>img {
+    margin-right: 15px;
+}
+
+.sbox1+p {
+    color: grey;
+    font-size: 13px;
+}
+
+.page {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    background-color: white;
+
+    /* margin-right:50px; */
+}
+
+.page2 {
+    margin-left: 20px;
+}
+
+a.page1:hover {
+    text-decoration: none;
+    background-color: black;
+    /* border: 1px solid grey; */
+    color: white;
+}
+
+a.page2:hover {
+    text-decoration: none;
+    background-color: black;
+    /* border: 1px solid grey; */
+    color: white;
+}
+
+#head {
+    display: flex;
+    padding-top: 20px;
+    ;
+    padding-left: 350px;
+    text-align: center;
+    gap: 20px;
+}
+
+#box1+p {
+    padding-top: 50px;
+}
+#box1>h1{
+    margin-top:10px;
+}
+#head:hover {
+    text-decoration: underline;
+}
+
+#image>img {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+
+#image:hover {
+    transform: scale(1.1);
+}
+
+#btn {
+    border: transparent;
+    width: 30%;
+    /* border:1px solid red */
+}
