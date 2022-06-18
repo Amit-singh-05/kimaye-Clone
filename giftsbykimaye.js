@@ -4,25 +4,29 @@
         "img": "https://cdn.shopify.com/s/files/1/0449/5225/6667/products/2I8A7790_360x.jpg?v=1631346990",
         "choosefruit": "Add to cart",
         "fruitname": "Pomegranate Seeds (Arils Cup)125g",
-        "fruitprice": "₹55-₹140"
+        "fruitprice": "₹140"
+        ,"price":140
       },
       {
         "img": "https://cdn.shopify.com/s/files/1/0449/5225/6667/products/2I8A7807_360x.jpg?v=1631347621",
         "choosefruit": "Add to cart",
         "fruitname": "Pomegranate Seeds (Arils Cup)125g",
-        "fruitprice": "₹55-₹140"
+        "fruitprice": "₹140"
+        ,"price":140
       },
       {
         "img": "https://cdn.shopify.com/s/files/1/0449/5225/6667/products/2I8A7821_360x.jpg?v=1631350656",
         "choosefruit": "Add to cart",
         "fruitname": "Pomegranate Seeds (Arils Cup)125g",
-        "fruitprice": "₹55-₹140"
+        "fruitprice": "₹140"
+        ,"price":140
       },
       {
         "img": "https://cdn.shopify.com/s/files/1/0449/5225/6667/products/I8A9400copy_360x.jpg?v=1651844098",
         "choosefruit": "Add to cart",
         "fruitname": "Pomegranate Seeds (Arils Cup)125g",
-        "fruitprice": "₹55-₹140"
+        "fruitprice": "₹140"
+        ,"price":140
       },
     ]
     let cartarr=JSON.parse(localStorage.getItem("cartdata"))||[]; 

@@ -4,25 +4,29 @@
         "img": "https://cdn.shopify.com/s/files/1/0449/5225/6667/products/47dfb7d1-d8d3-4c96-bda9-7dc85dfdec51_360x.png?v=1613364164",
         "choosefruit": "Add to cart",
         "fruitname": "Pomegranate Seeds (Arils Cup)125g",
-        "fruitprice": "₹55-₹140"
+        "fruitprice": "₹140"
+        ,"price":140
       },
       {
         "img": "https://cdn.shopify.com/s/files/1/0449/5225/6667/products/24d0f9c9-fe83-40a3-84ab-300e73e4ff8d_360x.png?v=1611811511",
         "choosefruit": "Add to cart",
         "fruitname": "Coconut Chunks Cup(100g)",
-        "fruitprice": "₹51-₹130"
+        "fruitprice": "₹130"
+        ,"price":130
       },
       {
         "img": "https://cdn.shopify.com/s/files/1/0449/5225/6667/products/0fce7fd6-f30e-45df-8c52-234acbd62023_360x.png?v=1611811509",
         "choosefruit": "Add to cart",
         "fruitname": "Grated Coconut Punnet",
         "fruitprice": "₹51"
+        ,"price":51
       },
       {
         "img": "https://cdn.shopify.com/s/files/1/0449/5225/6667/products/62cef687-de59-4f5a-acf3-4df1238c3e29-min_360x.png?v=1614324446",
         "choosefruit": "Add to cart",
         "fruitname": "Kimaye Arils-Coco Cup(125G)",
-        "fruitprice": "₹55-₹140"
+        "fruitprice": "₹140"
+        ,"price":140
       },
 
     ]

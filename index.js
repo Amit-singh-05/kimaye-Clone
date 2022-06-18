@@ -3,15 +3,24 @@
   if(Number(localStorage.getItem("login"))==1){
     document.querySelector(".c3").addEventListener("click",function(){
       document.querySelector(".bg-modal").style.display="none";
-      document.querySelector(".c3").setAttribute("href","myaccount.html")
+      document.querySelector(".c3").setAttribute("href","myaccount.html");
   })
   }else{
     document.querySelector(".c3").addEventListener("click",function(){
       document.querySelector(".bg-modal").style.display="flex";
-      
   })
   }
- 
+ //************************************ */
+ if(Number(localStorage.getItem("login"))==1){
+  document.querySelector(".c4").addEventListener("click",function(){
+    document.querySelector(".bg-modalcart").style.display="none";
+    document.querySelector(".c4").setAttribute("href","cart.html");
+})
+}else{
+  document.querySelector(".c4").addEventListener("click",function(){
+    document.querySelector(".bg-modalcart").style.display="flex";
+})
+}
   //to close popup
   document.querySelector("#close").addEventListener("click",function(){
       document.querySelector(".bg-modal").style.display="none";
@@ -30,9 +39,9 @@
       document.querySelector(".bg-modalsignup").style.display="none";
   })
   //to go to cart
-  document.querySelector(".c4").addEventListener("click",function(){
-      document.querySelector(".bg-modalcart").style.display="flex";
-  })
+  // document.querySelector(".c4").addEventListener("click",function(){
+  //     document.querySelector(".bg-modalcart").style.display="flex";
+  // })
   //to close cart
   document.querySelector("#cclose").addEventListener("click",function(){
       document.querySelector(".bg-modalcart").style.display="none";
@@ -52,11 +61,13 @@
   //2222222222222222222222222222222222222222222222222
   //to close after resister
   document.querySelector(".register").addEventListener("click",function(){
+    window.location.reload()
     if(document.querySelector("#fname").value==""||document.querySelector("#smail").value==""||document.querySelector("#spassword").value==""){
-            alert ("please fill all  required data")
+            alert ("Please fill all  required data")
         }else{
           document.querySelector(".bg-modalsignup").style.display="none";
-          window.location.reload()
+          
+          alert ("Signed up successfully")
         } 
   })
   //********************************
@@ -83,6 +94,7 @@
     
     document.querySelector(".login").addEventListener("click",handlelogin)
     function handlelogin(){
+      window.location.reload()
         // event.preventDefault()
         let flag = false;
         let lemail = document.querySelector("#lmail").value;
@@ -102,12 +114,13 @@
           alert ("Logged in successfully")
           document.querySelector(".bg-modal").style.display="none";
           localStorage.setItem("login",1)
-          window.location.reload()
+          
         }else {
             
             alert ("Wrong login credentials")
             localStorage.setItem("login",0)
         }
+       
     }
     
     console.log(localStorage.getItem("login"),typeof localStorage.getItem("login"))
