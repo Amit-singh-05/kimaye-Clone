@@ -86,6 +86,13 @@
             window.location.reload();
           }
        
+  document.querySelector(".payment").addEventListener("click",function(){
+   document.querySelector(".bg-modalpayment").style.display="flex";
+        })
+ document.querySelector("#paclose").addEventListener("click",function(){
+ document.querySelector(".bg-modalpayment").style.display="none";
+      })
+
 document.querySelector(".itemsandprice>h1").innerText="Total items -"+" "+itms
 
-document.querySelector(".itemsandprice>h1+h1").innerText="Subtotal -"+" "+exact
+document.querySelector(".itemsandprice>h1+h1").innerText="Subtotal -"+" "+"₹"+exact

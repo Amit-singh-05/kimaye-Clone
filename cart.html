@@ -214,6 +214,19 @@
 </div>
 </div>
 <!-- put your html -->
+<div class="bg-modalpayment">
+  <div id="paymentbox">
+    <a href="#" class="payclose" id="paclose">+</a>
+    <form>
+      <input type="number" placeholder="Enter card number" id="cardnumber">
+      <input type="month" placeholder="MM/YY" id="Date">
+      <input type="Password" placeholder="Enter CV code" id="cvcode">
+      <input type="text" placeholder="Enter card holder name" id="name">
+      <button id="Confirmpayment">Confirm payment</button>
+    </form>
+</div>
+</div>
+<!-- *********************************************** -->
 <div class="heading">
     <h1>MY CART</h1>
       <p><span id="x"><a href="index.html" >Home</a></span>/ My Account</p>
@@ -225,11 +238,12 @@
     <div class="itemsandprice">
         <h1>total item</h1>
         <h1>total cost</h1>
+        <p style="color: red;">**Delivery charges ₹50</p>
+        <p>Order value should be more than ₹500 to avail free delivery</p>
     </div>
   <div>
     <input class="coopan" type="text" placeholder="Enter Coopan Code">
-   
-    <a href="">Proceed to payment</a>
+   <a class="payment" href="#">Proceed to payment</a>
   </div>
   </div>
    <!-- las part -->
